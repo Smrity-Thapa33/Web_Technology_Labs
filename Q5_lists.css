@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+h2 {
+    text-align: center;
+    color: #0d6efd; /* Bootstrap blue */
+}
+h3 {
+    color: #198754; /* green */
+    margin-top: 20px;
+}
+/* Style lists */
+ol {
+    background-color: #e2e3e5; /* light grey */
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+ul {
+    background-color: #fef3c7; /* light yellow */
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+li {
+    margin: 8px 0;
+}
+/* Nested lists styling */
+ul ul {
+    background-color: #f8d7da; /* light pink */
+    padding: 10px 20px;
+    margin-top: 5px;
+}
+dl {
+    background-color: #d1e7dd; /* light green */
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
