@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mark Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .marksheet {
+            width: 60%; 
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+        .marksheet th, .marksheet td {
+            border: 2px solid #333;
+            padding: 12px;
+            text-align: center;
+        }
+        .marksheet th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .marksheet caption {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .student-info td {
+            text-align: left;
+            border: none;
+            padding: 5px 15px; 
+            font-weight: bold;
+        }
+        .total-row th {
+            background-color: #2196F3;
+            color: white;
+        }
+        .pass {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table class="marksheet">
+        <caption>Student Mark Sheet</caption>
+
+        <tr class="student-info">
+            <td><strong>Name:</strong> Smrity Thapa</td>
+            <td><strong>Roll No:</strong> 52</td>
+            <td><strong>Year:</strong> 2026</td>
+            <td><strong>Semester:</strong> 5</td>
+        </tr>
+        <tr>
+            <th>Subject</th>
+            <th>Full Marks</th>
+            <th>Pass Marks</th>
+            <th>Marks Obtained</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Design and Analysis of Algorithms</td>
+            <td>100</td>
+            <td>40</td>
+            <td>85</td>
+            <td class="pass">Pass</td>
+        </tr>
+        <tr>
+            <td>System Analysis and Design</td>
+            <td>100</td>
+            <td>40</td>
+            <td>90</td>
+            <td class="pass">Pass</td>
+        </tr>
+        <tr>
+            <td>Cryptography</td>
+            <td>100</td>
+            <td>40</td>
+            <td>88</td>
+            <td class="pass">Pass</td>
+        </tr>
+        <tr>
+            <td>Simulation and Modeling</td>
+            <td>100</td>
+            <td>40</td>
+            <td>92</td>
+            <td class="pass">Pass</td>
+        </tr>
+        <tr>
+            <td>Web Technology</td>
+            <td>100</td>
+            <td>40</td>
+            <td>95</td>
+            <td class="pass">Pass</td>
+        </tr>
+        <tr>
+            <td>Multimedia Computing</td>
+            <td>100</td>
+            <td>40</td>
+            <td>89</td>
+            <td class="pass">Pass</td>
+        </tr>
+
+        <tr class="total-row">
+            <th>Total</th>
+            <th>600</th>
+            <th>-</th>
+            <th>539</th>
+            <th>-</th>
+        </tr>
+        <tr>
+            <td colspan="4"><strong>Percentage</strong></td>
+            <td>89.83%</td>
+        </tr>
+        <tr>
+            <td colspan="4"><strong>Grade</strong></td>
+            <td>A-</td>
+        </tr>
+    </table>
+</body>
+</html>
