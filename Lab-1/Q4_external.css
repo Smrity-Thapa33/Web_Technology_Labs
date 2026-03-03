@@ -1,0 +1,9 @@
+.external-box {
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #cff4fc; /* light blue */
+    border: 2px solid #055160;
+    text-align: center;
+    font-weight: bold;
+}

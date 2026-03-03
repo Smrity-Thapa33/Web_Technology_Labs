@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Types Demo</title>
+
+    <!-- 2. Internal / Embedded CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        .internal-box {
+            width: 300px;
+            padding: 10px;
+            margin: 10px auto;
+            background-color: #d1e7dd; /* light green */
+            border: 2px solid #0f5132;
+            text-align: center;
+        }
+    </style>
+
+    <!-- 3. External CSS Link -->
+    <link rel="stylesheet" href="Q4_external.css">
+</head>
+<body>
+
+    <h1>Demonstration of CSS Types</h1>
+
+    <!-- 1. Inline CSS -->
+    <div style= "width: 300px; padding: 10px; margin: 10px auto; background-color: #f8d7da; border: 2px solid #842029; text-align: center;">
+        It is done as example of Inline CSS 
+    </div>
+
+    <!-- 2. Internal / Embedded CSS -->
+    <div class="internal-box">
+        It is done as exmaple of Internal / Embedded CSS
+    </div>
+
+    <!-- 3. External CSS -->
+    <div class="external-box">
+        It is done as exmaple of External CSS 
+    </div>
+
+</body>
+</html>
