@@ -1,0 +1,24 @@
+<!--2) Write a javascript program to get two numbers using the prompt box and
+display the sum-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Two Numbers</title>
+</head>
+<body>
+    <h3>Calculate Sum of Two Numbers</h3>
+
+    <!-- Button to trigger sum calculation -->
+    <button onclick="calculateSum()">Enter Numbers</button>
+    <script>
+        function calculateSum() {
+            var num1 = prompt("Enter the first number:");
+            var num2 = prompt("Enter the second number:");
+            var sum = Number(num1) + Number(num2);
+            alert("The sum of " + num1 + " and " + num2 + " is: " + sum);
+        }
+    </script>
+</body>
+</html>

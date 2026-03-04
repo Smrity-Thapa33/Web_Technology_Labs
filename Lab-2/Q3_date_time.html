@@ -1,0 +1,21 @@
+<!--3) Write a JS program to display Current DateTime.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date and Time</title>
+</head>
+<body>
+    <h3>Display Current Date and Time</h3>
+    <button onclick="showDateTime()">Show Date & Time</button>
+    <p id="demo"></p>
+    <script>
+        function showDateTime() {
+            var currentDate = new Date();
+            document.getElementById("demo").innerHTML = currentDate;
+        }
+    </script>
+</body>
+</html>

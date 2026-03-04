@@ -1,0 +1,139 @@
+<!--5) Demonstrate the form validation using javascript (eg: user registration
+form)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .container {
+            width: 350px;
+            margin: 40px auto;
+            border: 2px solid black;
+        }
+        .container h2{
+            display: flex;
+            justify-content: center;
+        }
+        .form-group {
+            padding: 8px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"] {
+            width: 200px;
+        }
+        .error {
+            color: red;
+            font-size: 13px;
+            margin-left: 100px;
+        }
+        button {
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+    <div class="form-group">
+        <label>Name:</label>
+        <input type="text" id="name">
+        <div id="nameError" class="error"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Email:</label>
+        <input type="text" id="email">
+        <div id="emailError" class="error"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Password:</label>
+        <input type="password" id="password">
+        <div id="passwordError" class="error"></div>
+    </div>
+
+    <div class="form-group">
+        <label>Gender:</label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <div id="genderError" class="error"></div>
+    </div>
+
+    <div class="form-group">
+        <label></label>
+        <input type="checkbox" id="terms"> I agree to terms&conditions
+        <div id="termsError" class="error"></div>
+    </div>
+
+    <button type="submit">Register</button>
+
+</form>
+</div>
+
+<script>
+function validateForm() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var gender = document.getElementsByName("gender");
+    var terms = document.getElementById("terms").checked;
+
+    // Clear old errors
+    document.getElementById("nameError").innerText = "";
+    document.getElementById("emailError").innerText = "";
+    document.getElementById("passwordError").innerText = "";
+    document.getElementById("genderError").innerText = "";
+    document.getElementById("termsError").innerText = "";
+
+    var valid = true;
+
+    if (name.trim() === "") {
+        document.getElementById("nameError").innerText = "Enter name";
+        valid = false;
+    }
+    else if (!/^[a-zA-Z]+$/.test(name.trim())) {
+        document.getElementById("nameError").innerText = "Invalid name format";
+        valid = false;
+    }
+
+    let email_pattern = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+    if (email.trim() === "") {
+        document.getElementById("emailError").innerText = "Enter email";
+        valid = false;
+    }
+    else if (!email_pattern.test(email.trim())) {
+        document.getElementById("emailError").innerText = "Invalid email format";
+        valid = false;
+    }
+    if (password.length < 6) {
+        document.getElementById("passwordError").innerText = "Min 6 characters";
+        valid = false;
+    }
+    if (!gender[0].checked && !gender[1].checked) {
+        document.getElementById("genderError").innerText = "Select gender";
+        valid = false;
+    }
+    if (!terms) {
+        document.getElementById("termsError").innerText = "Accept terms";
+        valid = false;
+    }
+
+    return valid;
+}
+</script>
+
+</body>
+</html>
