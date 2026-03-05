@@ -1,0 +1,39 @@
+<!--11) Write a script to illustrate the concept of chaining using the slideUp and
+slideDown method.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaining Example</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+    <body>
+
+        <h2>jQuery Chaining Example</h2>
+        <button id="btn">Click Me</button>
+        <div id="box">Hello</div>
+
+        <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+
+                // Chaining slideUp and slideDown
+                $("#box").slideUp(1000).slideDown(1000);
+            });
+        });
+        </script>
+    </body>
+</html>

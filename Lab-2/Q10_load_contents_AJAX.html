@@ -1,0 +1,32 @@
+<!--10) Create a button that loads content from an external file (data.html) into
+a <div> on the page using AJAX.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Load Content using AJAX</h2>
+    <button id="loadBtn">Load Content</button>
+    <br><br>
+
+    <div id="content" style="border:1px solid black; padding:10px;">
+        Content will appear here...
+    </div>
+
+    <script>
+    $(document).ready(function(){
+        $("#loadBtn").click(function(){
+
+            // Load external file into div
+            $("#content").load("Q10_data.html");
+        });
+    });
+    </script>
+</body>
+</html>

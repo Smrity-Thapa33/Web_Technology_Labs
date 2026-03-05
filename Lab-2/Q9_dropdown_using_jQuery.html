@@ -1,0 +1,40 @@
+<!--9) Write a program to get the selected value and currently selected text of a
+dropdown box using jQuery?-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Selection with jQuery</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Select Your Favorite Fruit</h2>
+
+    <label for="fruits">Choose Fruit:</label>
+    <select id="fruits">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="mango">Mango</option>
+        <option value="orange">Orange</option>
+    </select>
+
+    <button id="show">Show Selected</button>
+
+    <p id="result"></p>
+
+    <script>
+    $(document).ready(function(){
+        $("#show").click(function(){
+            // Get selected value
+            var value = $("#fruits").val();
+            // Get selected text
+            var text = $("#fruits option:selected").text();
+            // Display
+            $("#result").text("Selected Value: " + value + " , Selected Text: " + text);
+        });
+    });
+    </script>
+</body>
+</html>

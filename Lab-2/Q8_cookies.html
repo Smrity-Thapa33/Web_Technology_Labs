@@ -1,0 +1,49 @@
+<!--8) Write JavaScript functions to handle cookie operations:setCookie,
+getCookie, and deleteCookie-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Operations</title>
+</head>
+<body>
+    <h2>Cookie Demo</h2>
+
+    <button onclick="setCookie('username', 'Smrity', 7)">Set Cookie</button>
+    <button onclick="alert(getCookie('username'))">Get Cookie</button>
+    <button onclick="deleteCookie('username')">Delete Cookie</button>
+
+    <p id="status"></p>
+    <script>
+    // Function to set a cookie
+    function setCookie(name, value, days) {
+        var d = new Date();
+        d.setTime(d.getTime() + (days*24*60*60*1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        document.getElementById("status").innerText = "Cookie set: " + name;
+    }
+
+    // Function to get a cookie value
+    function getCookie(name) {
+        var cname = name + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i].trim();
+            if (c.indexOf(cname) == 0) {
+                return c.substring(cname.length, c.length);
+            }
+        }
+        return "Cookie not found";
+    }
+
+    // Function to delete a cookie
+    function deleteCookie(name) {
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.getElementById("status").innerText = "Cookie deleted: " + name;
+    }
+    </script>
+</body>
+</html>

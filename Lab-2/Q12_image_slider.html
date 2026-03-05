@@ -1,0 +1,52 @@
+<!--12) Create a simple image slider with next and previous buttons. Clicking
+these buttons should cycle through a series of images-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Slider</title>
+    <style>
+        img {
+            width: 250px;
+            height: 250px;
+        }
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Simple Image Slider</h2>
+    <img id="slider" src="img1.jpg" alt="slider_image">
+
+    <br>
+    <button onclick="previous()">Previous</button>
+    <button onclick="next()">Next</button>
+
+    <script>
+        // Array of images
+        var images = ["img1.jpg", "img2.png", "img3.png"];
+
+        // Current image index
+        var index = 0;
+
+        function next() {
+            index++;
+            if(index >= images.length) {
+                index = 0;  // Go back to first image
+            }
+            document.getElementById("slider").src = images[index];
+        }
+
+        function previous() {
+            index--;
+            if(index < 0) {
+                index = images.length - 1;  // Go to last image
+            }
+            document.getElementById("slider").src = images[index];
+        }
+    </script>
+</body>
+</html>
