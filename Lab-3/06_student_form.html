@@ -1,0 +1,37 @@
+<!-- Q6: Form to collect student details and store into database -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Form</title>
+</head>
+<body>
+
+    <h1>Student Registration</h1>
+
+    <form action="06_student_form.php" method="POST">
+
+        <label>Full Name:</label><br>
+        <input type="text" name="name" placeholder="Enter your name"><br><br>
+
+        <label>Address:</label><br>
+        <input type="text" name="address" placeholder="Enter your address"><br><br>
+
+        <label>Phone:</label><br>
+        <input type="text" name="phone" placeholder="Enter your phone"><br><br>
+
+        <label>Age:</label><br>
+        <input type="text" name="age" placeholder="Enter your age"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
