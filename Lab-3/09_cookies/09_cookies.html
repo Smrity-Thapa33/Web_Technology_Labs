@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input {
+            padding: 8px;
+            width: 200px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cookie Demo</h1>
+    
+    <h3>Set Cookie Values</h3>
+    <form action="09_cookies.php" method="POST">
+        
+        <label>Username:</label><br>
+        <input type="text" name="username" placeholder="Enter username" required><br>
+        
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Enter email" required><br>
+        
+        <label>Favorite Color:</label><br>
+        <input type="text" name="color" placeholder="Enter favorite color" required><br>
+        
+        <label>Cookie Expiration (days):</label><br>
+        <input type="number" name="expiration" value="7" min="1"><br><br>
+        
+        <button type="submit">Set Cookie</button>
+    </form>
+</div>
+
+</body>
+</html>
