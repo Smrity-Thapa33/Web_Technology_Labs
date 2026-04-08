@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 Hello World
 PHP File Handling Example
 Reading file line by line
 Lab Program 4
+=======
+Aelith, 19
+Selene, 21
+Rounju, 18
+Rehan, 23
+>>>>>>> f9d962f971fc1644e837399ae456d7f9fca25174
