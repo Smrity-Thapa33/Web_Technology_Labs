@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Books>
+    <Book>
+        <Title>Web Technology</Title>
+        <Author>John Smith</Author>
+        <ISBN>9781234567890</ISBN>
+        <Publisher>ABC Publications</Publisher>
+        <Edition>3rd</Edition>
+        <Price>500</Price>
+    </Book>
+
+    <Book>
+        <Title>PHP Programming</Title>
+        <Author>David Miller</Author>
+        <ISBN>9789876543210</ISBN>
+        <Publisher>XYZ Publications</Publisher>
+        <Edition>2nd</Edition>
+        <Price>450</Price>
+    </Book>
+</Books>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE Students [
+    <!ELEMENT Students (Student+)>
+    <!ELEMENT Student (Name, Address, RollNo)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Address (#PCDATA)>
+    <!ELEMENT RollNo (#PCDATA)>
+]>
+
+<Students>
+    <Student>
+        <Name>Ram</Name>
+        <Address>Kathmandu</Address>
+        <RollNo>3001</RollNo>
+    </Student>
+
+    <Student>
+        <Name>Sham</Name>
+        <Address>Pokhara</Address>
+        <RollNo>3002</RollNo>
+    </Student>
+</Students>

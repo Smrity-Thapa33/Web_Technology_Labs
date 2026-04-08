@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="02_employee.xsd">
+
+    <Employee>
+        <Name>Ram Sharma</Name>
+        <Address>Kathmandu</Address>
+        <Phone>9812345678</Phone>
+        <Designation>Manager</Designation>
+        <Salary>50000</Salary>
+    </Employee>
+
+    <Employee>
+        <Name>Sita Rai</Name>
+        <Address>Lalitpur</Address>
+        <Phone>9800000000</Phone>
+        <Designation>Developer</Designation>
+        <Salary>40000</Salary>
+    </Employee>
+
+</Employees>

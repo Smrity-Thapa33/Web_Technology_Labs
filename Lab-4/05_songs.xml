@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Songs>
+
+    <Song>
+        <Name>Shape of You</Name>
+        <Singer>Ed Sheeran</Singer>
+        <Composer>Ed Sheeran</Composer>
+        <Length>4:24</Length>
+    </Song>
+
+    <Song>
+        <Name>Believer</Name>
+        <Singer>Imagine Dragons</Singer>
+        <Composer>Dan Reynolds</Composer>
+        <Length>3:24</Length>
+    </Song>
+
+    <Song>
+        <Name>Perfect</Name>
+        <Singer>Ed Sheeran</Singer>
+        <Composer>Ed Sheeran</Composer>
+        <Length>4:40</Length>
+    </Song>
+
+    <Song>
+        <Name>Faded</Name>
+        <Singer>Alan Walker</Singer>
+        <Composer>Alan Walker</Composer>
+        <Length>3:32</Length>
+    </Song>
+
+</Songs>

@@ -1,0 +1,34 @@
+Contacts {
+    display: block;
+    font-family: Arial;
+}
+
+Person {
+    display: block;
+    margin-bottom: 30px;
+}
+
+Name {
+    display: block;
+    font-size: 28px;
+    color: red;
+    font-weight: bold;
+}
+
+Street, City {
+    display: block;
+    color: green;
+    font-size: 18px;
+}
+
+Email {
+    display: block;
+    color: blue;
+    font-size: 18px;
+}
+
+Phone {
+    display: block;
+    color: green;
+    font-size: 18px;
+}

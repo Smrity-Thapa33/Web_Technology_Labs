@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="03_book_validation.xsd">
+
+    <Book isbn="9781234567890">
+        <Name>
+            <FirstName>Web</FirstName>
+            <MiddleName>Tech</MiddleName>
+            <LastName>Guide</LastName>
+        </Name>
+
+        <Author>John Smith</Author>
+        <Author>David Miller</Author>
+
+        <PageNo>350</PageNo>
+        <Price>500</Price>
+    </Book>
+
+</Books>
